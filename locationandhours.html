@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Chinese Food
+        </title>
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href="css/customcsslocationandhours.css" rel="stylesheet">
+
+</head>
+      <body>
+        <div class="header">
+      <div id="headernav">
+        <h1>King's Garden</h1>
+        <ul class="nav">
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="locationandhours.html">Location and Hours</a></li>
+        </ul>
+      </div>
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.073913, -75.20294),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  <body>
+  	<div class="map">
+  	<div class="centering">
+    <div id="map-canvas"></div>
+</div>
+</div>
+    <ul id="contact">
+    	<li>8225 Germantown Ave, Philadelphia 19118</li>
+    	<li>(At E Southampton Ave)</li>
+    	<li>(215) 753-0246</li>
+    	<li>Mon-Thu: 11:30am-10pm</li>
+		<li>Fri-Sat: 11:30am-11pm</li>
+		<li>Sun: 1:30pm-10pm</li>
+		</ul>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
