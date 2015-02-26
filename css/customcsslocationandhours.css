@@ -1,3 +1,20 @@
 #contact {text-align: right;
 list-style-type: none;
-margin-top: -9%;}
+margin-top: -65%;
+float: right;}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 70%;
+	height: 0;
+	overflow: hidden;
+
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 75%;
+	height: 75%;
+}
