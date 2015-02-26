@@ -1,0 +1,16 @@
+
+
+.well h3 {	text-align: center;}
+
+#carousel-example-generic {
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+}
+#title {z-index: 1;
+	position: absolute;
+	left: 40%;
+	top: 9%;
+	color: #FFFFCC;
+
+}
